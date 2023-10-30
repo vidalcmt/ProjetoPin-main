@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="C:\Users\felip\Desktop\ProjetoImel\ProjetoPin-main\assets\css\tela-admin\cadastrar_alunos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="C:\Users\felip\Desktop\ProjetoImel\ProjetoPin-main\assets\css\base-sistema\cabecalho.css"
+    />
+    <title>Imel - Cadastro Alunos</title>
+  </head>
+
+  <body>
+    <!--Nav Bar-->
+    <header class="header">
+      <nav class="navbar">
+        <a href="admin_menu.html" class="logo">Imel</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link">Alunos</a>
+            <div class="dropdown-menu">
+              <a href="admin_procurar_aluno.html" class="dropdown-option"
+                >Procurar Alunos</a
+              >
+              <a href="admin_cadastrar_alunos.html" class="dropdown-option"
+                >Cadastrar Aluno</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="admin_chamada.html" class="nav-link">Chamada</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link">Usuários</a>
+            <div class="dropdown-menu">
+              <a href="admin_usuarios.html" class="dropdown-option"
+                >Usuários Ativos</a
+              >
+              <a href="admin_cadastrar_usuarios.html" class="dropdown-option"
+                >Cadastrar Usuário</a
+              >
+              <a href="admin_editar_usuarios.html" class="dropdown-option"
+                >Editar Usuários</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="admin_eventos.html" class="nav-link">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a href="admin_config.html" class="nav-link">Configurações</a>
+          </li>
+          <li class="nav-item">
+            <a href="admin_login.html" class="nav-link">Sair</a>
+          </li>
+        </ul>
+        <div class="ham">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <!--Nav Bar-->
+
+    <!--Conteudo-->
+    <main class="main">
+      <div class="box">
+        <form action="">
+          <fieldset>
+            <legend><b>Cadastro de Aluno</b></legend>
+            <br />
+            <div class="inputbox">
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                class="inputUser"
+                required
+              />
+              <label for="nome">Nome Completo do Aluno</label>
+            </div>
+            <div class="inputbox">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="inputUser"
+                required
+              />
+              <label for="email">E-mail do Aluno</label>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <!--Conteudo-->
+
+    <footer class="footer">
+      <p>Instituto Meninos do Lago © 2023</p>
+    </footer>
+
+    <script src="ProjetoPin-main\assets\js\alunos.js"></script>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Style the header */
+.top {
+    text-align: center;
+}
+
+/* Month header */
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #00A78D;
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    border-radius: 5px;
+    background: #00A78D;
+    color: white;
+    font-weight: bold;
+}
+
+.days li .activeYellow {
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    background: #FFC401;
+    font-weight: bold;
+}
+
+/* Create three equal columns that floats next to each other */
+.botoes {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 380px;
+    background-color: white;
+    overflow-x: hidden;
+    text-align: center;
+    /* Should be removed. Only for demonstration */
+}
+
+.sidenav a {
+    margin: 10px;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+    transition: 0.3s;
+    border-top: 0.5px solid black;
+    border-bottom: 1px solid black;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+    background-color: #00A78D;
+    color: white;
+}
+
+/* Create three equal columns that floats next to each other */
+.eventos {
+    float: left;
+    width: 80%;
+    height: 380px;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.eventos-linha {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    margin: 10px 0;
+}
+
+.eventos-linha-data {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    /* Adicione esta linha */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.eventos-linha-data p {
+    font-size: 50px;
+    background-color: #00A78D;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.eventos-linha-descricao {
+    margin: auto auto auto 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventos-linha-descricao ul {
+    list-style-type: circle;
+}
+
+.eventos-linha-descricao-titulo {
+    font-weight: bold;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .botoes {
+        width: 100%;
+        height: auto;
+    }
+
+    .eventos {
+        width: 100%;
+        height: 33.3%;
+    }
+}

@@ -1,0 +1,87 @@
+/* ---------- MAIN ---------*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+
+    margin-bottom: 150px;
+}   
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+/* ---------- TABLE ---------- */
+
+.thead td, thead th {
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    padding: 2.5vh;
+
+    font-size: 2.3vh;  
+}
+
+thead {
+    margin-bottom: 1.5vh;
+}
+
+tbody td {
+    border-top: 1.5px solid rgba(169, 169, 169, 0.9);
+    border-bottom: 1.5px solid rgba(169, 169, 169, 0.9);
+    padding: 2.3vh;
+}
+
+table {
+    border-collapse: collapse;
+
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+}
+
+.corsim {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.dropdown a {
+    appearance: button;
+    background-color: #00A78D;
+    border-radius: 50px;
+    padding-top: 1.8vh;
+    padding-bottom: 1.8vh;
+    padding-left: 2.7vh;  
+    padding-right: 2.7vh;
+
+    
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+ 
+/* ---------- SEARCH BAR ---------- */
+
+.search {
+    display: block;
+    justify-content: start;
+
+    width: 78%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+

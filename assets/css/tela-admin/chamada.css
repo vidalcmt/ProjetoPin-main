@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.main {
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  color: #faf9f6;
+  padding: 15px;
+  display: flexbox;
+  gap: 10px;
+  grid-template-areas:
+    'content content content'
+    'footer footer footer';
+}
+
+.box {
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 8%;
+  color: #000000;
+}
+
+.container div {
+  padding: 20px;
+  border-radius: 3px;
+  display: flex;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  height: 100vh;
+  align-items: center;
+}
+
+.content {
+  grid-area: content;
+  height: 100vh;
+  width: 100vh;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  background-color: #dbdbdb;
+}
+
+.titulo {
+  background-color: #aaa9a9;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+}
+
+.conteudo td {
+  padding: 5px;
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tfoot tr:nth-child(even) {
+  background-color: #fffefe;
+}
+
+tfoot tr:nth-child(odd) {
+  background-color: #a1a1a1;
+  color: #a1a1a1;
+}
+
+.rodape {
+  padding: 5px;
+  text-align: center;
+}
+
+.salvar {
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+  min-height: 10vh;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-image: url(/assets/imagem/planodefundo.jpg);
+  background-repeat: no-repeat;
+}
+
+table {
+  font-family: 'Verdana', sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.salvar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.salvar button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.salvar button:hover {
+  background-color: #0062cc;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fdfdfd;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #050505;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}

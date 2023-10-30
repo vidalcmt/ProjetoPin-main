@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #FAF9F6;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.container header {
+    position: relative;
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+}
+
+.container header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 150px;
+    border-radius: 12px;
+    background-color: #00A78D;
+}
+
+.container form{
+    position: relative;
+    min-height: 490px;
+    background-color: #fffaf0;
+    overflow: hidden;
+}
+
+.container form .form{
+    position: absolute;
+    transition: 0.6s ease;
+}
+
+.container form .form.second{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+}
+
+form.secActive .form.second {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+form.secActive .form.first {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+}
+
+.container form .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+    font-style: italic;
+    
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field {
+    display: flex;
+    width: calc(100%/3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input, .select-box select {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #FAF9F6;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 35px;
+    margin: 8px 0;
+}
+
+.select-box select {
+    width: 100%;
+    height: 35px;
+}
+
+.input-field input:is(:focus) {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field input:is(:valid) {
+    background-color: white;
+}
+
+.input-field input[type="date"] {
+    color: #707070;
+}
+
+.input-field input[type="date"]:valid {
+    color: #333;
+}
+
+.container form button, .backBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #00A78D;
+    margin: 25px 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+form button:hover, .backBtn{
+    background-color: #008c77;
+}
+
+@media (max-width: 750px) {
+    .container form {
+        overflow-y: scroll;
+    }
+
+    .container form::-webkit-scrollbar{
+        display: none;
+    }
+
+    form .fields .input-field {
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    .container form {
+        overflow-y: scroll;
+    }
+
+    .container form::-webkit-scrollbar{
+        display: none;
+    }
+
+    form .fields .input-field {
+        width: 100%
+    }
+}
+
+
+.auto-fill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #00A78D;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: 0.5s ease;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: 0.5s ease;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #00A78D;
+    color: white;
+  }
+  
+  /* Modal Body */
+  .modal-body {padding: 2px 16px;}
+  
+  /* Modal Footer */
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #00A78D;
+    color: white;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 70px auto auto auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
