@@ -1,134 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="C:\Users\felip\Desktop\ProjetoImel\ProjetoPin-main\assets\css\tela-aluno\cadastrar_alunos.css"
-    />
-    <link
-      rel="stylesheet"
-      href="C:\Users\felip\Desktop\ProjetoImel\ProjetoPin-main\assets\css\base-sistema\cabecalho.css"
-    />
-    <link
-      rel="stylesheet"
-      href="C:\Users\felip\Desktop\ProjetoImel\ProjetoPin-main\assets\css\tela-aluno\perfil_alunos.css"
-    />
-    <link
-      rel="stylesheet"
-      href="C:\Users\felip\Desktop\ProjetoImel\ProjetoPin-main\assets\css\tela-aluno\perfil_alunos2.css"
-    />
 
-    <title>Imel - Perfil Aluno</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/tela-admin/cadastrar_alunos.css" />
+  <link rel="stylesheet" href="../assets/css/base-sistema/cabecalho.css" />
+  <link rel="stylesheet" href="../assets/css/tela-aluno/perfil_alunos.css" />
+  <link rel="stylesheet" href="../assets/css/tela-aluno/perfil_alunos2.css" />
 
-  <body style="background-image: url(assets/css/planodefundo.jpg)">
-    <header class="header">
-      <nav class="navbar">
-        <a href="menu_alunos.html" class="logo">Imel</a>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="alunos_perfil_1.html" class="nav-link">Perfil</a>
-          </li>
-          <li class="nav-item">
-            <a href="alunos_presenca.html" class="nav-link">Presenças</a>
-          </li>
-          <li class="nav-item">
-            <a href="alunos_eventos.html" class="nav-link">Eventos</a>
-          </li>
-          <li class="nav-item">
-            <a href="alunos_config.html" class="nav-link">Configurações</a>
-          </li>
-          <li class="nav-item">
-            <a href="alunos_login.html" class="nav-link">Sair</a>
-          </li>
-        </ul>
-        <div class="ham">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </header>
+  <title>Imel - Perfil Aluno</title>
+</head>
 
-    <main class="main">
-      <div class="container">
-        <h1>João Pedro</h1>
-        <p>paracanoagem</p>
-        <img class="" src="assets/css/usuario.png" alt="Avatar" />
-
-        <div class="about">
-          <h1>Sobre mim</h1>
-          <p>Gosto muito do esporte que pratico, sou estudioso e quieto</p>
-        </div>
-
-        <div>
-          <br />
-          <h2>Justificar faltas</h2>
-          <br />
-          <label>Data:</label>
-          <input type="date" /> <br />
-          <label>Insira o atestado:</label>
-          <input type="file" name="arquivo" />
-          <br /><br />
-          <button id="myBtn">Enviar justificativa</button>
-
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <p>Justificativa registrada com sucesso!</p>
-            </div>
-          </div>
-
-          <br /><br /><br />
-          <table>
-            <thead>
-              <tr>
-                <th>Boletim</th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Matematica</td>
-                <td>5.6</td>
-                <td>7.9</td>
-                <td>10.0</td>
-              </tr>
-              <tr>
-                <td>Portugues</td>
-                <td>10.0</td>
-                <td>9.9</td>
-                <td>8.9</td>
-              </tr>
-              <tr>
-                <td>Historia</td>
-                <td>0.5</td>
-                <td>3,5</td>
-                <td>8.5</td>
-              </tr>
-              <tr>
-                <td>Ciencias</td>
-                <td>10.0</td>
-                <td>7.7</td>
-                <td>8.9</td>
-              </tr>
-            </tbody>
-          </table>
-          <br /><br />
-          <a href="alunos_perfil_1.html" class="next-button">Voltar</a>
-        </div>
+<body style="background-image: url(../assets/imagem/planodefundo.jpg)">
+  <header class="header">
+    <nav class="navbar">
+      <a href="../tela-aluno/alunos_menu.html" class="logo">Imel</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="../tela-aluno/alunos_perfil_1.html" class="nav-link">Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a href="../tela-aluno/alunos_presenca.html" class="nav-link">Presenças</a>
+        </li>
+        <li class="nav-item">
+          <a href="../tela-aluno/alunos_eventos.html" class="nav-link">Eventos</a>
+        </li>
+        <li class="nav-item">
+          <a href="../tela-aluno/alunos_config.html" class="nav-link">Configurações</a>
+        </li>
+        <li class="nav-item">
+          <a href="../tela-aluno/alunos_login.html" class="nav-link">Sair</a>
+        </li>
+      </ul>
+      <div class="ham">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </main>
-    <footer class="footer">
-      <p>Instituto Meninos do Lago © 2023</p>
-    </footer>
+    </nav>
+  </header>
 
-    <script src="assets/js/perfil_alunos2.js"></script>
-  </body>
+  <main class="main">
+    <div class="container">
+      <h1>João Pedro</h1>
+      <p>paracanoagem</p>
+      <img class="" src="../assets/imagem/usuario.png" alt="Avatar" />
+
+      <div class="about">
+        <h1>Sobre mim</h1>
+        <p>Gosto muito do esporte que pratico, sou estudioso e quieto</p>
+      </div>
+
+      <div>
+        <br />
+        <h2>Justificar faltas</h2>
+        <br />
+        <label>Data:</label>
+        <input type="date" /> <br />
+        <label>Insira o atestado:</label>
+        <input type="file" name="arquivo" />
+        <br /><br />
+        <button id="myBtn">Enviar justificativa</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Justificativa registrada com sucesso!</p>
+          </div>
+        </div>
+
+        <br /><br /><br />
+        <table>
+          <thead>
+            <tr>
+              <th>Boletim</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Matematica</td>
+              <td>5.6</td>
+              <td>7.9</td>
+              <td>10.0</td>
+            </tr>
+            <tr>
+              <td>Portugues</td>
+              <td>10.0</td>
+              <td>9.9</td>
+              <td>8.9</td>
+            </tr>
+            <tr>
+              <td>Historia</td>
+              <td>0.5</td>
+              <td>3,5</td>
+              <td>8.5</td>
+            </tr>
+            <tr>
+              <td>Ciencias</td>
+              <td>10.0</td>
+              <td>7.7</td>
+              <td>8.9</td>
+            </tr>
+          </tbody>
+        </table>
+        <br /><br />
+        <a href="../tela-aluno/alunos_perfil_1.html" class="next-button">Voltar</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>Instituto Meninos do Lago © 2023</p>
+  </footer>
+
+  <script src="assets/js/perfil_alunos2.js"></script>
+</body>
+
 </html>

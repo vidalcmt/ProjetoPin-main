@@ -8,9 +8,6 @@ html {
 }
 
 .bg-image {
-  /* The image used */
-  background-image: url('C:\Users\Felipe Vidal\Desktop\ProjetoImel\ProjetoPin-main\assets\imagem\itaipu_geral.jpg');
-
   /* Add the blur effect */
   filter: blur(8px);
   -webkit-filter: blur(8px);
