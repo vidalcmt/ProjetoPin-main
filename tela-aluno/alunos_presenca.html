@@ -1,202 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registro de Presença do Aluno</title>
-    <link
-      rel="stylesheet"
-      href="../assets/css/base-sistema/cabecalho.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../assets/css/tela-admin/presencas_alunos.css"
-    />
-  </head>
 
-  <body>
-    <header class="header">
-      <nav class="navbar">
-        <a href="../tela-aluno/alunos_menu.html" class="logo">Imel</a>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="../tela-aluno/alunos_perfil_1.html" class="nav-link">Perfil</a>
-          </li>
-          <li class="nav-item">
-            <a href="../tela-aluno/alunos_presenca.html" class="nav-link">Presenças</a>
-          </li>
-          <li class="nav-item">
-            <a href="../tela-aluno/alunos_eventos.html" class="nav-link">Eventos</a>
-          </li>
-          <li class="nav-item">
-            <a href="../tela-aluno/alunos_config.html" class="nav-link">Configurações</a>
-          </li>
-          <li class="nav-item">
-            <a href="../tela-aluno/alunos_login.html" class="nav-link">Sair</a>
-          </li>
-        </ul>
-        <div class="ham">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Presença do Aluno</title>
+  <link rel="stylesheet" href="../assets/css/base-sistema/cabecalho.css" />
+  <link rel="stylesheet" href="../assets/css/tela-admin/presencas_alunos.css" />
+</head>
 
-    <!--Conteudo-->
-    <main class="main">
-      <div class="container">
-        <h3 style="text-align: left; margin-top: 2.5vh; font-size: 3vh">
-          Alunos Cadastrados
-        </h3>
-
-        <div class="search">
-          <input
-            id="searchbar"
-            type="text"
-            name="searchbar"
-            placeholder="Pesquisar Data da Falta"
-          />
-        </div>
-
-        <table class="tabela_alunos">
-          <thead class="headtable">
-            <tr>
-              <th>Id</th>
-              <th width="150vh" style="text-align: left">Nome</th>
-              <th>Data Falta</th>
-              <th>Justificativa</th>
-              <th>Presença</th>
-            </tr>
-          </thead>
-
-          <tbody id="table_body">
-            <tr class="corsim">
-              <td class="aluno" style="text-align: center">1009</td>
-              <td>Thiago Zanardi</td>
-              <td style="text-align: center">16/10/2023</td>
-              <td style="text-align: center"><input type="file" /></td>
-              <td style="text-align: center">
-                <div class="dropdown">
-                  <a class="falta">Faltou</a>
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="text-align: center">1009</td>
-              <td>Thiago Zanardi</td>
-              <td style="text-align: center">12/10/2023</td>
-              <td style="text-align: center"><input type="file" /></td>
-              <td style="text-align: center">
-                <div class="dropdown">
-                  <a>Presente</a>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="corsim">
-              <td style="text-align: center">1009</td>
-              <td>Thiago Zanardi</td>
-              <td style="text-align: center">08/10/2023</td>
-              <td style="text-align: center"><input type="file" /></td>
-              <td style="text-align: center">
-                <div class="dropdown">
-                  <a class="falta">Faltou</a>
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="text-align: center">1009</td>
-              <td>Thiago Zanardi</td>
-              <td style="text-align: center">04/10/2023</td>
-              <td style="text-align: center"><input type="file" /></td>
-              <td style="text-align: center">
-                <div class="dropdown">
-                  <a>Presente</a>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="corsim">
-              <td style="text-align: center">1009</td>
-              <td>Thiago Zanardi</td>
-              <td style="text-align: center">31/09/2023</td>
-              <td style="text-align: center"><input type="file" /></td>
-              <td style="text-align: center">
-                <div class="dropdown">
-                  <a class="falta">Faltou</a>
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="text-align: center">1009</td>
-              <td>Thiago Zanardi</td>
-              <td style="text-align: center">27/09/2023</td>
-              <td style="text-align: center"><input type="file" /></td>
-              <td style="text-align: center">
-                <div class="dropdown">
-                  <a>Presente</a>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="corsim">
-              <td style="text-align: center">1009</td>
-              <td>Thiago Zanardi</td>
-              <td style="text-align: center">23/09/2023</td>
-              <td style="text-align: center"><input type="file" /></td>
-              <td style="text-align: center">
-                <div class="dropdown">
-                  <a class="falta">Faltou</a>
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="text-align: center">1009</td>
-              <td>Thiago Zanardi</td>
-              <td style="text-align: center">19/09/2023</td>
-              <td style="text-align: center"><input type="file" /></td>
-              <td style="text-align: center">
-                <div class="dropdown">
-                  <a href="">Presente</a>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="corsim">
-              <td style="text-align: center">1009</td>
-              <td>Thiago Zanardi</td>
-              <td style="text-align: center">14/09/2023</td>
-              <td style="text-align: center"><input type="file" /></td>
-              <td style="text-align: center">
-                <div class="dropdown">
-                  <a class="falta">Faltou</a>
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="text-align: center">1009</td>
-              <td>Thiago Zanardi</td>
-              <td style="text-align: center">09/09/2023</td>
-              <td style="text-align: center"><input type="file" /></td>
-              <td style="text-align: center">
-                <div class="dropdown">
-                  <a>Presente</a>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="../tela-aluno/alunos_menu.html" class="logo">Imel</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="../tela-aluno/alunos_perfil_1.html" class="nav-link">Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a href="../tela-aluno/alunos_presenca.html" class="nav-link">Presenças</a>
+        </li>
+        <li class="nav-item">
+          <a href="../tela-aluno/alunos_eventos.html" class="nav-link">Eventos</a>
+        </li>
+        <li class="nav-item">
+          <a href="../tela-aluno/alunos_config.html" class="nav-link">Configurações</a>
+        </li>
+        <li class="nav-item">
+          <a href="../tela-aluno/alunos_login.html" class="nav-link">Sair</a>
+        </li>
+      </ul>
+      <div class="ham">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </main>
-    <!--Conteudo-->
+    </nav>
+  </header>
 
-    <script src="../assets/js/menu.js"></script>
-    <script src="assets\js\presenca_alunos.js"></script>
-  </body>
+  <!--Conteudo-->
+  <main class="main">
+    <div class="container">
+      <h3 style="text-align: left; margin-top: 2.5vh; font-size: 3vh">
+        Faltas
+      </h3>
+
+      <div class="search">
+        <input id="searchbar" type="text" name="searchbar" placeholder="Pesquisar Data da Falta" />
+      </div>
+
+      <table class="tabela_alunos">
+        <thead class="headtable">
+          <tr>
+            <th>Id</th>
+            <th width="150vh" style="text-align: left">Nome</th>
+            <th>Data Falta</th>
+            <th>Justificativa</th>
+            <th>Presença</th>
+          </tr>
+        </thead>
+
+        <tbody id="table_body">
+          <tr class="corsim">
+            <td class="aluno" style="text-align: center">1009</td>
+            <td>Thiago Zanardi</td>
+            <td style="text-align: center">16/10/2023</td>
+            <td style="text-align: center"><input type="file" /></td>
+            <td style="text-align: center">
+              <div class="dropdown">
+                <a class="falta">Faltou</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="text-align: center">1009</td>
+            <td>Thiago Zanardi</td>
+            <td style="text-align: center">12/10/2023</td>
+            <td style="text-align: center"></td>
+            <td style="text-align: center">
+              <div class="dropdown">
+                <a>Presente</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="corsim">
+            <td style="text-align: center">1009</td>
+            <td>Thiago Zanardi</td>
+            <td style="text-align: center">08/10/2023</td>
+            <td style="text-align: center"><input type="file" /></td>
+            <td style="text-align: center">
+              <div class="dropdown">
+                <a class="falta">Faltou</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="text-align: center">1009</td>
+            <td>Thiago Zanardi</td>
+            <td style="text-align: center">04/10/2023</td>
+            <td style="text-align: center"></td>
+            <td style="text-align: center">
+              <div class="dropdown">
+                <a>Presente</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="corsim">
+            <td style="text-align: center">1009</td>
+            <td>Thiago Zanardi</td>
+            <td style="text-align: center">31/09/2023</td>
+            <td style="text-align: center"><input type="file" /></td>
+            <td style="text-align: center">
+              <div class="dropdown">
+                <a class="falta">Faltou</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="text-align: center">1009</td>
+            <td>Thiago Zanardi</td>
+            <td style="text-align: center">27/09/2023</td>
+            <td style="text-align: center"></td>
+            <td style="text-align: center">
+              <div class="dropdown">
+                <a>Presente</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="corsim">
+            <td style="text-align: center">1009</td>
+            <td>Thiago Zanardi</td>
+            <td style="text-align: center">23/09/2023</td>
+            <td style="text-align: center"><input type="file" /></td>
+            <td style="text-align: center">
+              <div class="dropdown">
+                <a class="falta">Faltou</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="text-align: center">1009</td>
+            <td>Thiago Zanardi</td>
+            <td style="text-align: center">19/09/2023</td>
+            <td style="text-align: center"></td>
+            <td style="text-align: center">
+              <div class="dropdown">
+                <a href="">Presente</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="corsim">
+            <td style="text-align: center">1009</td>
+            <td>Thiago Zanardi</td>
+            <td style="text-align: center">14/09/2023</td>
+            <td style="text-align: center"><input type="file" /></td>
+            <td style="text-align: center">
+              <div class="dropdown">
+                <a class="falta">Faltou</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="text-align: center">1009</td>
+            <td>Thiago Zanardi</td>
+            <td style="text-align: center">09/09/2023</td>
+            <td style="text-align: center"></td>
+            <td style="text-align: center">
+              <div class="dropdown">
+                <a>Presente</a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <!--Conteudo-->
+
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/procurar_aluno.js"></script>
+</body>
+
 </html>
