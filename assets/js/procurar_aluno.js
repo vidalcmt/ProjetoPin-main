@@ -24,7 +24,7 @@ SEARCHBAR.addEventListener('keyup', () => {
         if (true === conteudoDALinha.includes(expressao)) {
             linhas[posicao].style.display = '';
         } else {
-            linhas[posicao].style.display ='none';
+            linhas[posicao].style.display = 'none';
         }
     }
 })
