@@ -1,93 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Aluno</title>
+    <link
+      rel="stylesheet"
+      href="../assets/css/tela-aluno/menu_aluno.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/css/base-sistema/cabecalho.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu Aluno</title>
-  <link rel="stylesheet" href="../assets/css/tela-aluno/config.css" />
-  <link rel="stylesheet" href="../assets/css/base-sistema/cabecalho.css" />
-</head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="menu_alunos.html" class="logo">Imel</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../tela-aluno/alunos_perfil_1.html" class="nav-link">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a href="../tela-aluno/alunos_presenca.html" class="nav-link">Presenças</a>
+          </li>
+          <li class="nav-item">
+            <a href="../tela-aluno/alunos_eventos.html" class="nav-link">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a href="../tela-aluno/alunos_config.html" class="nav-link">Configurações</a>
+          </li>
+          <li class="nav-item">
+            <a href="../tela-aluno/alunos_login.html" class="nav-link">Sair</a>
+          </li>
+        </ul>
+        <div class="ham">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header class="header">
-    <nav class="navbar">
-      <a href="../tela-aluno/alunos_menu.html" class="logo">Imel</a>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="../tela-aluno/alunos_perfil_1.html" class="nav-link">Perfil</a>
-        </li>
-        <li class="nav-item">
-          <a href="../tela-aluno/alunos_presenca.html" class="nav-link">Presenças</a>
-        </li>
-        <li class="nav-item">
-          <a href="../tela-aluno/alunos_eventos.html" class="nav-link">Eventos</a>
-        </li>
-        <li class="nav-item">
-          <a href="../tela-aluno/alunos_config.html" class="nav-link">Configurações</a>
-        </li>
-        <li class="nav-item">
-          <a href="../tela-aluno/alunos_login.html" class="nav-link">Sair</a>
-        </li>
-      </ul>
-      <div class="ham">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-  </header>
+    <main class="main"></main>
 
-  <main class="main">
+    <footer class="footer">
+      <p>Instituto Meninos do Lago © 2023</p>
+    </footer>
 
-    <div class="container">
-      <form>
-        <label for="user">Alterar Usuário</label>
-        <input id="user" placeholder=" Novo Usuário" type="text">
-
-        <label for="email">Alterar E-mail</label>
-        <input id="email" placeholder=" Novo E-mail" type="email">
-
-        <label for="senha">Alterar Senha</label>
-        <input id="senha" placeholder=" Nova Senha" type="password">
-
-        <label for="data">Formatação de Data</label>
-        <select id="data">
-          <option>dd-mm-yyyy</option>
-          <option>mm-dd-yyyy</option>
-          <option>yyyy-mm-dd</option>
-          <option>yyyy-dd-mm</option>
-        </select>
-
-
-
-        <input class="enviar" type="submit" value="Salvar">
-      </form>
-
-      <div class="lateral">
-
-        <h2>Informações Adicionais</h2>
-        <p>Para a opção de "Formatação de Data, entenda o padrão:
-          <br>
-          - dd-mm-yyyy = dia/mês/ano, exemplo: 20/11/2003;
-          <br>
-          - mm-dd-yyyy = mês/dia/ano, exemplo: 11/20/2003;
-          <br>
-          - yyyy-mm-dd = ano/mês/dia, exemplo: 2003/11/20;
-          <br>
-          - yyyy-dd-mm = ano/dia/mês, exemplo: 2003/20/11.
-        </p>
-
-      </div>
-    </div>
-
-  </main>
-
-  <footer class="footer">
-    <p>Instituto Meninos do Lago © 2023</p>
-  </footer>
-
-  <script src="../assets/js/menu.js"></script>
-</body>
-
+    <script src="../assets/js/menu.js"></script>
+  </body>
 </html>

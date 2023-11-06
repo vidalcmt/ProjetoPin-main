@@ -14,3 +14,15 @@
     align-items: center;
     justify-content: center;
 }
+
+.cadastroAluno {
+    height: 80%;
+    width: 80%;
+
+    display: flexbox;
+    
+}
+
+.parte1-left {
+ 
+}

@@ -1,180 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../assets/css/tela-admin/chamada.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../assets/css/tela-admin/chamada.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/css/base-sistema/cabecalho.css"
+    />
 
-  <link rel="stylesheet" href="../assets/css/base-sistema/cabecalho.css" />
+    <title>Imel - Chamada</title>
 
-  <title>Imel - Chamada</title>
+    <script>
+      hoje = new Date()
+    </script>
+  </head>
 
-  <script>
-    hoje = new Date()
-  </script>
-</head>
+  <body style="background-image: url(../assets/imagem/planodefundo.jpg)">
+    <!--Nav Bar-->
+    <header class="header">
+      <nav class="navbar">
+        <a href="admin_menu.html" class="logo">Imel</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link">Alunos</a>
+            <div class="dropdown-menu">
+              <a href="admin_procurar_aluno.html" class="dropdown-option"
+                >Procurar Alunos</a
+              >
+              <a href="admin_cadastrar_alunos.html" class="dropdown-option"
+                >Cadastrar Aluno</a
+              >
+            </div>
+          </li>
 
-<body style="background-image: url(../assets/imagem/planodefundo.jpg)">
-  <!--Nav Bar-->
-  <header class="header">
-    <nav class="navbar">
-      <a href="admin_menu.html" class="logo">Imel</a>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a class="nav-link">Alunos</a>
-          <div class="dropdown-menu">
-            <a href="admin_procurar_aluno.html" class="dropdown-option">Procurar Alunos</a>
-            <a href="admin_cadastrar_alunos.html" class="dropdown-option">Cadastrar Aluno</a>
-          </div>
-        </li>
+          <li class="nav-item">
+            <a href="admin_chamada.html" class="nav-link">Chamada</a>
+          </li>
 
-        <li class="nav-item">
-          <a href="admin_chamada.html" class="nav-link">Chamada</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link">Usuários</a>
+            <div class="dropdown-menu">
+              <a href="../tela-admin/admin_usuarios.html" class="dropdown-option"
+                >Usuários Ativos</a
+              >
+              <a href="../tela-admin/admin_cadastrar_usuarios.html" class="dropdown-option"
+                >Cadastrar Usuário</a
+              >
+              <a href="../tela-admin/admin_editar_usuarios.html" class="dropdown-option"
+                >Editar Usuários</a
+              >
+            </div>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link">Usuários</a>
-          <div class="dropdown-menu">
-            <a href="../tela-admin/admin_usuarios.html" class="dropdown-option">Usuários Ativos</a>
-            <a href="../tela-admin/admin_cadastrar_usuarios.html" class="dropdown-option">Cadastrar Usuário</a>
-            <a href="../tela-admin/admin_editar_usuarios.html" class="dropdown-option">Editar Usuários</a>
-          </div>
-        </li>
+          <li class="nav-item">
+            <a href="../tela-admin/admin_eventos.html" class="nav-link">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a href="../tela-admin/admin_config.html" class="nav-link">Configurações</a>
+          </li>
+          <li class="nav-item">
+            <a href="../tela-admin/admin_login.html" class="nav-link">Sair</a>
+          </li>
+        </ul>
+        <div class="ham">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <!--Nav Bar-->
 
-        <li class="nav-item">
-          <a href="../tela-admin/admin_eventos.html" class="nav-link">Eventos</a>
-        </li>
-        <li class="nav-item">
-          <a href="../tela-admin/admin_config.html" class="nav-link">Configurações</a>
-        </li>
-        <li class="nav-item">
-          <a href="../tela-admin/admin_login.html" class="nav-link">Sair</a>
-        </li>
-      </ul>
-      <div class="ham">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+    <!--Conteudo-->
+    <main class="main">
+      <div class="container">
+        
+        
+
+        <div class="box">
+          <select id="turma">
+            <option value="A">Turma A</option>
+            <option value="B">Turma B</option>
+            <option value="C">Turma C</option>
+          </select>
+
+
+          <table>
+            <thead>
+              <tr>
+                <th class="titulo">Id</th>
+                <th class="titulo">Nomes</th>
+                <th class="titulo">Presença</th>
+              </tr>
+            </thead>
+            <tbody class="conteudo">
+              <tr>
+                <td>012</td>
+                <td>Thiago</td>
+                <td>
+                  <input type="checkbox" name="cor" value="vermelho" checked />
+                </td>
+              </tr>
+              <tr>
+                <td>321</td>
+                <td>Davi</td>
+                <td>
+                  <input type="checkbox" name="cor" value="vermelho" checked />
+                </td>
+              </tr>
+              <tr>
+                <td>533</td>
+                <td>Fernando</td>
+                <td>
+                  <input type="checkbox" name="cor" value="vermelho" checked />
+                </td>
+              </tr>
+              <tr>
+                <td>234</td>
+                <td>Renan</td>
+                <td>
+                  <input type="checkbox" name="cor" value="vermelho" checked />
+                </td>
+              </tr>
+              <tr>
+                <td>213</td>
+                <td>Cassio</td>
+                <td>
+                  <input type="checkbox" name="cor" value="vermelho" checked />
+                </td>
+              </tr>
+              <tr>
+                <td>879</td>
+                <td>Davi</td>
+                <td>
+                  <input type="checkbox" name="cor" value="vermelho" checked />
+                </td>
+              </tr>
+              <tr>
+                <td>1233</td>
+                <td>Felipe</td>
+                <td>
+                  <input type="checkbox" name="cor" value="vermelho" checked />
+                </td>
+              </tr>
+              <tr>
+                <td>098</td>
+                <td>Joao</td>
+                <td>
+                  <input type="checkbox" name="cor" value="vermelho" checked />
+                </td>
+              </tr>
+              <tr>
+                <td>952</td>
+                <td>Adilson</td>
+                <td>
+                  <input type="checkbox" name="cor" value="vermelho" checked />
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="rodape">...</td>
+                <td class="rodape">...</td>
+                <td class="rodape">...</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="salvar">
+          <button id="myBtn">Salvar</button>
+        </div>
       </div>
-    </nav>
-  </header>
-  <!--Nav Bar-->
-
-  <!--Conteudo-->
-  <main class="main">
-    <div class="container">
-
-
-
-      <div class="box">
-        <select id="turma">
-          <option value="A">Turma A</option>
-          <option value="B">Turma B</option>
-          <option value="C">Turma C</option>
-        </select>
-
-
-        <table>
-          <thead>
-            <tr>
-              <th class="titulo">Id</th>
-              <th class="titulo">Nomes</th>
-              <th class="titulo">Presença</th>
-            </tr>
-          </thead>
-          <tbody class="conteudo">
-            <tr>
-              <td>012</td>
-              <td>Thiago</td>
-              <td>
-                <input type="checkbox" name="cor" value="vermelho" checked />
-              </td>
-            </tr>
-            <tr>
-              <td>321</td>
-              <td>Davi</td>
-              <td>
-                <input type="checkbox" name="cor" value="vermelho" checked />
-              </td>
-            </tr>
-            <tr>
-              <td>533</td>
-              <td>Fernando</td>
-              <td>
-                <input type="checkbox" name="cor" value="vermelho" checked />
-              </td>
-            </tr>
-            <tr>
-              <td>234</td>
-              <td>Renan</td>
-              <td>
-                <input type="checkbox" name="cor" value="vermelho" checked />
-              </td>
-            </tr>
-            <tr>
-              <td>213</td>
-              <td>Cassio</td>
-              <td>
-                <input type="checkbox" name="cor" value="vermelho" checked />
-              </td>
-            </tr>
-            <tr>
-              <td>879</td>
-              <td>Davi</td>
-              <td>
-                <input type="checkbox" name="cor" value="vermelho" checked />
-              </td>
-            </tr>
-            <tr>
-              <td>1233</td>
-              <td>Felipe</td>
-              <td>
-                <input type="checkbox" name="cor" value="vermelho" checked />
-              </td>
-            </tr>
-            <tr>
-              <td>098</td>
-              <td>Joao</td>
-              <td>
-                <input type="checkbox" name="cor" value="vermelho" checked />
-              </td>
-            </tr>
-            <tr>
-              <td>952</td>
-              <td>Adilson</td>
-              <td>
-                <input type="checkbox" name="cor" value="vermelho" checked />
-              </td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td class="rodape">...</td>
-              <td class="rodape">...</td>
-              <td class="rodape">...</td>
-            </tr>
-          </tfoot>
-        </table>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Registro de presenças salvo com sucesso!</p>
+        </div>
       </div>
-      <div class="salvar">
-        <button id="myBtn">Salvar</button>
-      </div>
-    </div>
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Registro de presenças salvo com sucesso!</p>
-      </div>
-    </div>
-  </main>
-  <!--Conteudo-->
+    </main>
+    <!--Conteudo-->
 
-  <footer class="footer">
-    <p>Instituto Meninos do Lago © 2023</p>
-  </footer>
+    <footer class="footer">
+      <p>Instituto Meninos do Lago © 2023</p>
+    </footer>
 
-  <script src="../assets/js/chamada.js"></script>
-</body>
-
+    <script src="../assets/js/chamada.js"></script>
+  </body>
 </html>
