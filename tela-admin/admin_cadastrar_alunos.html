@@ -1,206 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="../assets/css/tela-admin/cadastrar_alunos.css"
-    />
-    <link rel="stylesheet" href="../assets/css/base-sistema/cabecalho.css" />
-    <title>Imel - Cadastro Alunos</title>
-  </head>
 
-  <body>
-    <!--Nav Bar-->
-    <header class="header">
-      <nav class="navbar">
-        <a href="../tela-admin/admin_menu.html" class="logo">Imel</a>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a class="nav-link">Alunos</a>
-            <div class="dropdown-menu">
-              <a
-                href="../tela-admin/admin_procurar_aluno.html"
-                class="dropdown-option"
-                >Procurar Alunos</a
-              >
-              <a
-                href="../tela-admin/admin_cadastrar_alunos.html"
-                class="dropdown-option"
-                >Cadastrar Aluno</a
-              >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/tela-admin/cadastrar_alunos.css" />
+  <link rel="stylesheet" href="../assets/css/base-sistema/cabecalho.css" />
+  <title>Imel - Cadastro Alunos</title>
+</head>
+
+<body>
+  <!--Nav Bar-->
+  <header class="header">
+    <nav class="navbar">
+      <a href="../tela-admin/admin_menu.html" class="logo">Imel</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a class="nav-link">Alunos</a>
+          <div class="dropdown-menu">
+            <a href="../tela-admin/admin_procurar_aluno.html" class="dropdown-option">Procurar Alunos</a>
+            <a href="../tela-admin/admin_cadastrar_alunos.html" class="dropdown-option">Cadastrar Aluno</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="../tela-admin/admin_chamada.html" class="nav-link">Chamada</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link">Usuários</a>
+          <div class="dropdown-menu">
+            <a href="../tela-admin/admin_cadastrar_usuarios.html" class="dropdown-option">Cadastrar Usuário</a>
+            <a href="../tela-admin/admin_editar_usuarios.html" class="dropdown-option">Editar Usuários</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="../tela-admin/admin_eventos.html" class="nav-link">Eventos</a>
+        </li>
+        <li class="nav-item">
+          <a href="../tela-admin/admin_config.html" class="nav-link">Configurações</a>
+        </li>
+        <li class="nav-item">
+          <a href="../tela-admin/admin_login.html" class="nav-link">Sair</a>
+        </li>
+      </ul>
+      <div class="ham">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <!--Nav Bar-->
+
+  <!--Conteudo-->
+
+  <main class="main">
+    <div class="container">
+      <div class="form step active" id="step1">
+        <form action="#">
+          <div class="form-header">
+            <div class="title">
+              <h1>Cadastro</h1>
             </div>
-          </li>
-
-          <li class="nav-item">
-            <a href="../tela-admin/admin_chamada.html" class="nav-link"
-              >Chamada</a
-            >
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link">Usuários</a>
-            <div class="dropdown-menu">
-              <a
-                href="../tela-admin/admin_usuarios.html"
-                class="dropdown-option"
-                >Usuários Ativos</a
-              >
-              <a
-                href="../tela-admin/admin_cadastrar_usuarios.html"
-                class="dropdown-option"
-                >Cadastrar Usuário</a
-              >
-              <a
-                href="../tela-admin/admin_editar_usuarios.html"
-                class="dropdown-option"
-                >Editar Usuários</a
-              >
+            <div class="voltar-button">
+              <button><a href="../tela-admin/admin_menu.html">Voltar</a></button>
             </div>
-          </li>
+          </div>
 
-          <li class="nav-item">
-            <a href="../tela-admin/admin_eventos.html" class="nav-link"
-              >Eventos</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="../tela-admin/admin_config.html" class="nav-link"
-              >Configurações</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="../tela-admin/admin_login.html" class="nav-link">Sair</a>
-          </li>
-        </ul>
-        <div class="ham">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </header>
-    <!--Nav Bar-->
-
-    <!--Conteudo-->
-
-    <main class="main">
-      <div class="container">
-        <div class="form step active" id="step1">
-          <form action="#">
-            <div class="form-header">
-              <div class="title">
-                <h1>Cadastro</h1>
-              </div>
-              <div class="voltar-button">
-                <button><a href="../tela-admin/admin_menu.html">Voltar</a></button>
-              </div>
+          <div class="input-group">
+            <div class="input-box">
+              <label for="firstname">Primeiro Nome</label>
+              <input type="text" id="firstname" name="firstname" placeholder="Digite seu primeiro nome" required />
             </div>
 
-            <div class="input-group">
-              <div class="input-box">
-                <label for="firstname">Primeiro Nome</label>
-                <input
-                  type="text"
-                  id="firstname"
-                  name="firstname"
-                  placeholder="Digite seu primeiro nome"
-                  required
-                />
-              </div>
-
-              <div class="input-box">
-                <label for="lastname">Sobrenome</label>
-                <input
-                  type="text"
-                  id="lastname"
-                  name="lastname"
-                  placeholder="Digite seu sobrenome"
-                  required
-                />
-              </div>
-
-              <div class="input-box">
-                <label for="email">E-mail</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Digite seu email"
-                  required
-                />
-              </div>
-
-              <div class="input-box">
-                <label for="number">Celular</label>
-                <input
-                  type="tel"
-                  id="number"
-                  name="number"
-                  placeholder="(xx) xxxx-xxxxx"
-                  required
-                />
-              </div>
-
-              <div class="input-box">
-                <label for="rg">RG</label>
-                <input
-                  type="text"
-                  oninput="mascara(this)"
-                  id="rg"
-                  name="rg"
-                  placeholder="xxx.xxx.xxx-xx"
-                  required
-                />
-              </div>
-
-              <div class="input-box">
-                <label for="cpf">CPF</label>
-                <input
-                  type="text"
-                  oninput="mascara(this)"
-                  id="cpf"
-                  name="cpf"
-                  placeholder="xxx.xxx.xxx-xx"
-                  required
-                />
-              </div>
+            <div class="input-box">
+              <label for="lastname">Sobrenome</label>
+              <input type="text" id="lastname" name="lastname" placeholder="Digite seu sobrenome" required />
             </div>
 
-            <div class="gender-inputs">
-              <div class="gender-title">
-                <h6>Gênero</h6>
-              </div>
-
-              <div class="gender-group">
-                <div class="gender-input">
-                  <input type="radio" id="female" name="gender">
-                  <label for="female">Feminino</label>
-                </div>
-
-                <div class="gender-input">
-                  <input type="radio" id="male" name="gender">
-                  <label for="male">Masculino</label>
-                </div>
-
-                <div class="gender-input">
-                  <input type="radio" id="others" name="gender">
-                  <label for="others">Outros</label>
-                </div>
-
-                <div class="gender-input">
-                  <input type="radio" id="none" name="gender">
-                  <label for="none">Prefiro não dizer</label>
-                </div>
-                
-              </div>
+            <div class="input-box">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu email" required />
             </div>
 
-            <div class="continue-button">
-              <button onclick="nextStep(2)"><a>Continuar</a></button>
+            <div class="input-box">
+              <label for="number">Celular</label>
+              <input type="tel" id="number" name="number" placeholder="(xx) xxxx-xxxxx" required />
             </div>
-          </form>
+
+            <div class="input-box">
+              <label for="rg">RG</label>
+              <input type="text" oninput="mascara(this)" id="rg" name="rg" placeholder="xxx.xxx.xxx-xx" required />
+            </div>
+
+            <div class="input-box">
+              <label for="cpf">CPF</label>
+              <input type="text" oninput="mascara(this)" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" required />
+            </div>
+          </div>
+
+          <div class="gender-inputs">
+            <div class="gender-title">
+              <h6>Gênero</h6>
+            </div>
+
+            <div class="gender-group">
+              <div class="gender-input">
+                <input type="radio" id="female" name="gender">
+                <label for="female">Feminino</label>
+              </div>
+
+              <div class="gender-input">
+                <input type="radio" id="male" name="gender">
+                <label for="male">Masculino</label>
+              </div>
+
+              <div class="gender-input">
+                <input type="radio" id="others" name="gender">
+                <label for="others">Outros</label>
+              </div>
+
+              <div class="gender-input">
+                <input type="radio" id="none" name="gender">
+                <label for="none">Prefiro não dizer</label>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="continue-button">
+            <button onclick="nextStep(2)"><a>Continuar</a></button>
+          </div>
+        </form>
 
 
       </div>
@@ -219,70 +152,32 @@
           <div class="input-group">
             <div class="input-box">
               <label for="firstname">Primeiro Nome</label>
-              <input
-                type="text"
-                id="firstname"
-                name="firstname"
-                placeholder="Digite seu primeiro nome"
-                required
-              />
+              <input type="text" id="firstname" name="firstname" placeholder="Digite seu primeiro nome" required />
             </div>
 
             <div class="input-box">
               <label for="lastname">Sobrenome</label>
-              <input
-                type="text"
-                id="lastname"
-                name="lastname"
-                placeholder="Digite seu sobrenome"
-                required
-              />
+              <input type="text" id="lastname" name="lastname" placeholder="Digite seu sobrenome" required />
             </div>
 
             <div class="input-box">
               <label for="email">E-mail</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Digite seu email"
-                required
-              />
+              <input type="email" id="email" name="email" placeholder="Digite seu email" required />
             </div>
 
             <div class="input-box">
               <label for="number">Celular</label>
-              <input
-                type="tel"
-                id="number"
-                name="number"
-                placeholder="(xx) xxxx-xxxxx"
-                required
-              />
+              <input type="tel" id="number" name="number" placeholder="(xx) xxxx-xxxxx" required />
             </div>
 
             <div class="input-box">
               <label for="rg">RG</label>
-              <input
-                type="text"
-                oninput="mascara(this)"
-                id="rg"
-                name="rg"
-                placeholder="xxx.xxx.xxx-xx"
-                required
-              />
+              <input type="text" oninput="mascara(this)" id="rg" name="rg" placeholder="xxx.xxx.xxx-xx" required />
             </div>
 
             <div class="input-box">
               <label for="cpf">CPF</label>
-              <input
-                type="text"
-                oninput="mascara(this)"
-                id="cpf"
-                name="cpf"
-                placeholder="xxx.xxx.xxx-xx"
-                required
-              />
+              <input type="text" oninput="mascara(this)" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" required />
             </div>
           </div>
 
@@ -311,17 +206,17 @@
                 <input type="radio" id="none" name="gender">
                 <label for="none">Prefiro não dizer</label>
               </div>
-              
+
             </div>
           </div>
 
           <div class="continue-button">
-            <button  onclick="nextStep(3)"><a>Continuar</a></button>
+            <button onclick="nextStep(3)"><a>Continuar</a></button>
           </div>
         </form>
       </div>
 
-      <div class="form step" id="step3" >
+      <div class="form step" id="step3">
         <form action="#">
           <div class="form-header">
             <div class="title">
@@ -335,70 +230,32 @@
           <div class="input-group">
             <div class="input-box">
               <label for="firstname">Primeiro Nome</label>
-              <input
-                type="text"
-                id="firstname"
-                name="firstname"
-                placeholder="Digite seu primeiro nome"
-                required
-              />
+              <input type="text" id="firstname" name="firstname" placeholder="Digite seu primeiro nome" required />
             </div>
 
             <div class="input-box">
               <label for="lastname">Sobrenome</label>
-              <input
-                type="text"
-                id="lastname"
-                name="lastname"
-                placeholder="Digite seu sobrenome"
-                required
-              />
+              <input type="text" id="lastname" name="lastname" placeholder="Digite seu sobrenome" required />
             </div>
 
             <div class="input-box">
               <label for="email">E-mail</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Digite seu email"
-                required
-              />
+              <input type="email" id="email" name="email" placeholder="Digite seu email" required />
             </div>
 
             <div class="input-box">
               <label for="number">Celular</label>
-              <input
-                type="tel"
-                id="number"
-                name="number"
-                placeholder="(xx) xxxx-xxxxx"
-                required
-              />
+              <input type="tel" id="number" name="number" placeholder="(xx) xxxx-xxxxx" required />
             </div>
 
             <div class="input-box">
               <label for="rg">RG</label>
-              <input
-                type="text"
-                oninput="mascara(this)"
-                id="rg"
-                name="rg"
-                placeholder="xxx.xxx.xxx-xx"
-                required
-              />
+              <input type="text" oninput="mascara(this)" id="rg" name="rg" placeholder="xxx.xxx.xxx-xx" required />
             </div>
 
             <div class="input-box">
               <label for="cpf">CPF</label>
-              <input
-                type="text"
-                oninput="mascara(this)"
-                id="cpf"
-                name="cpf"
-                placeholder="xxx.xxx.xxx-xx"
-                required
-              />
+              <input type="text" oninput="mascara(this)" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" required />
             </div>
           </div>
 
@@ -427,26 +284,27 @@
                 <input type="radio" id="none" name="gender">
                 <label for="none">Prefiro não dizer</label>
               </div>
-              
+
             </div>
           </div>
 
           <div class="continue-button">
-            <button  type="submit"><a>Continuar</a></button>
+            <button type="submit"><a>Continuar</a></button>
           </div>
         </form>
       </div>
 
-      
+
       <!-- Adicione seu JavaScript aqui -->
-    </main>
-    <!--Conteudo-->
+  </main>
+  <!--Conteudo-->
 
-    <footer class="footer">
-      <p>Instituto Meninos do Lago © 2023</p>
-    </footer>
+  <footer class="footer">
+    <p>Instituto Meninos do Lago © 2023</p>
+  </footer>
 
-    <script src="../assets/js/alunos.js"></script>
-    <script src="../assets/js/cadastrar_aluno.js"></script>
-  </body>
+  <script src="../assets/js/alunos.js"></script>
+  <script src="../assets/js/cadastrar_aluno.js"></script>
+</body>
+
 </html>

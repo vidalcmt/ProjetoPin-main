@@ -42,7 +42,7 @@ img {
   margin: 20px auto;
   grid-gap: 20px;
   border: 5px double black;
-
+  margin: 20px;
   text-align: justify;
 }
 
