@@ -1,18 +1,3 @@
-function prosseguirParaParte2() {
-    document.getElementById('parte1').style.display = 'none';
-    document.getElementById('parte2').style.display = 'block';
-}
-
-function prosseguirParaParte3() {
-    document.getElementById('parte2').style.display = 'none';
-    document.getElementById('parte3').style.display = 'block';
-}
-
-function prosseguirParaParte4() {
-    document.getElementById('parte3').style.display = 'none';
-    document.getElementById('parte4').style.display = 'block';
-}
-
 function mascara(i){
    
     var v = i.value;
@@ -27,3 +12,12 @@ function mascara(i){
     if (v.length == 11) i.value += "-";
  
  }
+
+ function nextStep(step) {
+    var i;
+    var x = document.getElementsByClassName("step");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    document.getElementById('step' + step).style.display = "block";  
+}

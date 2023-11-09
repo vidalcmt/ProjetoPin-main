@@ -33,21 +33,12 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
 
-.form-image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fde3a7d7;
-    padding: 1rem;
-}
-
 .form-image img {
     width: 31rem;
 }
 
 .form {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,4 +210,12 @@ body {
     .gender-input {
         margin-top: 0.5rem;
     }
+}
+
+.step {
+    display: none;
+}
+
+.active {
+    display: block;
 }
