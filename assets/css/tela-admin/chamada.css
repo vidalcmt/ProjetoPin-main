@@ -35,7 +35,6 @@
 }
 
 .container div {
-  padding: 20px;
   border-radius: 3px;
   display: flex;
 }
@@ -52,69 +51,71 @@
   width: 100vh;
 }
 
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  border: 2px solid black;
+}
 
 select {
   width: 100%;
   border: 1px solid #ccc;
   padding: 10px;
-   background-color: #05B13B;
-       
+  background-color: white;
+  font-size: 16px;
+  letter-spacing: 1.5px;
 }
-option{
+
+option {
   background-color: #ccc;
-  
+  font-style: italic;
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
 }
 
-th {
-  text-align: center;
-  background-color: #ccc;
-}
-
+th,
 td {
-  padding: 10px;
+  padding: 8px;
+  text-align: center;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid #000;
-  margin-bottom: 10px;
-  background-color: #dbdbdb;
+.turma-table {
+  border: 1px solid #ccc;
+}
+
+.turma-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.turma-table tr:nth-child(odd) {
+  background-color: #fff;
 }
 
 .titulo {
-  background-color: #aaa9a9;
   font-weight: bold;
-  padding: 5px;
-  text-align: center;
+  background-color: #696969;
 }
 
-.conteudo td {
-  padding: 5px;
-  text-align: center;
+.rodapeA {
+  text-align: right;
+  color: #05B13B;
+  background-color: #05B13B;
+  padding: 4px;
 }
 
-tbody tr:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-tfoot tr:nth-child(even) {
-  background-color: #fffefe;
-}
-
-tfoot tr:nth-child(odd) {
-  background-color: #a1a1a1;
-  color: #a1a1a1;
-}
-
-.rodape {
-  padding: 5px;
-  text-align: center;
+.rodapeB {
+  text-align: right;
+  color: #0062cc;
+  background-color: #0062cc;
+  padding: 4px;
 }
 
 .salvar {
@@ -192,6 +193,12 @@ table {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  color: black;
+}
+
+.modal-content p {
+  margin-left: 50px;
+  margin-top: 7px;
 }
 
 /* The Close Button */
@@ -214,4 +221,3 @@ table {
   width: 100%;
   padding: 10px;
 }
-

@@ -19,7 +19,7 @@ var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
   modal.style.display = "block";
 }
-
+  
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
@@ -31,3 +31,32 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+const tableA = document.getElementById("tableA");
+const tableB = document.getElementById("tableB");
+const turmaSelect = document.getElementById("turma");
+
+turmaSelect.addEventListener("change", () => {
+  const turma = turmaSelect.value;
+
+  
+  if (turma === "A") {
+    tableA.style.display = "table";
+    tableB.style.display = "none";
+
+  } else {
+    tableA.style.display = "none";
+    tableB.style.display = "table";
+  }
+});
+
+ window.onload = function () {
+  const turma = turmaSelect.value;  
+  tableA.style.display = "table";
+  tableB.style.display = "none";
+
+ }
+
+
+
+
