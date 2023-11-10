@@ -13,6 +13,21 @@ function mascara(i){
  
  }
 
+ function mascaraRG(i){
+   
+    var v = i.value;
+    
+    if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
+       i.value = v.substring(0, v.length-1);
+       return;
+    }
+    
+    i.setAttribute("maxlength", "13");
+    if (v.length == 2 || v.length == 6) i.value += ".";
+    if (v.length == 10) i.value += "-";
+ 
+ }
+
  function nextStep(step) {
     var i;
     var x = document.getElementsByClassName("step");
@@ -20,4 +35,27 @@ function mascara(i){
         x[i].style.display = "none";  
     }
     document.getElementById('step' + step).style.display = "block";  
+}
+
+const handlePhone = (event) => {
+    let input = event.target
+    input.value = phoneMask(input.value)
+  }
+  
+  const phoneMask = (value) => {
+    if (!value) return ""
+    value = value.replace(/\D/g,'')
+    value = value.replace(/(\d{2})(\d)/,"($1) $2")
+    value = value.replace(/(\d)(\d{4})$/,"$1-$2")
+    return value
+  }
+
+function alert() {
+   Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Aluno Cadastrado com Sucesso!",
+      showConfirmButton: false,
+      timer: 1800
+    });
 }

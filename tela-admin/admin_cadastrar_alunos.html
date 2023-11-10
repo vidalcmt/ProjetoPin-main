@@ -62,7 +62,8 @@
         <form action="#">
           <div class="form-header">
             <div class="title">
-              <h1>Cadastro</h1>
+              <h1>Cadastro de Aluno</h1>
+              <h4 style="margin-top: 1.1rem;">Preencha com as informações do aluno</h4>
             </div>
             <div class="voltar-button">
               <button><a href="../tela-admin/admin_menu.html">Voltar</a></button>
@@ -87,12 +88,12 @@
 
             <div class="input-box">
               <label for="number">Celular</label>
-              <input type="tel" id="number" name="number" placeholder="(xx) xxxx-xxxxx" required />
-            </div>
+              <input type="tel" maxlength="15" onkeyup="handlePhone(event)" id="number" name="number" placeholder="(xx) xxxx-xxxxx" required />
+            </div>  
 
             <div class="input-box">
               <label for="rg">RG</label>
-              <input type="text" oninput="mascara(this)" id="rg" name="rg" placeholder="xxx.xxx.xxx-xx" required />
+              <input type="text" oninput="mascaraRG(this)" id="rg" name="rg" placeholder="xx.xxx.xxx-xx" required />
             </div>
 
             <div class="input-box">
@@ -142,7 +143,8 @@
         <form action="#">
           <div class="form-header">
             <div class="title">
-              <h1>TESTE</h1>
+              <h1>Cadastro de Aluno</h1>
+              <h4 style="margin-top: 1.1rem;">Preencha com as informações do aluno</h4>
             </div>
             <div class="voltar-button">
               <button onclick="nextStep(1)"><a>Voltar</a></button>
@@ -167,12 +169,12 @@
 
             <div class="input-box">
               <label for="number">Celular</label>
-              <input type="tel" id="number" name="number" placeholder="(xx) xxxx-xxxxx" required />
+              <input type="tel" onkeyup="handlePhone(event)" id="number" name="number" placeholder="(xx) xxxx-xxxxx" required />
             </div>
 
             <div class="input-box">
               <label for="rg">RG</label>
-              <input type="text" oninput="mascara(this)" id="rg" name="rg" placeholder="xxx.xxx.xxx-xx" required />
+              <input type="text" oninput="mascaraRG(this)" id="rg" name="rg" placeholder="xxx.xxx.xxx-xx" required />
             </div>
 
             <div class="input-box">
@@ -220,7 +222,8 @@
         <form action="#">
           <div class="form-header">
             <div class="title">
-              <h1>TESTE 1</h1>
+              <h1>Cadastro do Responsável do Aluno</h1>
+              <h4 style="margin-top: 1.5rem;">Preencha com as informações do responsável</h4>
             </div>
             <div class="voltar-button">
               <button onclick="nextStep(2)"><a>Voltar</a></button>
@@ -289,7 +292,7 @@
           </div>
 
           <div class="continue-button">
-            <button type="submit"><a>Continuar</a></button>
+            <button type="button" onclick="alert()"><a>Concluir cadastro</a></button>
           </div>
         </form>
       </div>
@@ -305,6 +308,8 @@
 
   <script src="../assets/js/alunos.js"></script>
   <script src="../assets/js/cadastrar_aluno.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>
