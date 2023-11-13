@@ -42,18 +42,8 @@
   </header>
 
   <main class="main">
-    <div class="container">
-      <h1>João Pedro</h1>
-      <p>paracanoagem</p>
-      <img class="" src="../assets/imagem/usuario.png" alt="Avatar" />
-
-      <div class="about">
-        <h1>Sobre mim</h1>
-        <p>Gosto muito do esporte que pratico, sou estudioso e quieto</p>
-      </div>
-
-      <div>
-        <br />
+    <div class="container" style="min-height: 600px;">
+      <div class="esquerda">
         <h2>Justificar faltas</h2>
         <br />
         <label>Data:</label>
@@ -63,16 +53,15 @@
         <br /><br />
         <button id="myBtn">Enviar justificativa</button>
 
-        <!-- The Modal -->
         <div id="myModal" class="modal">
-          <!-- Modal content -->
+
           <div class="modal-content">
             <span class="close">&times;</span>
             <p>Justificativa registrada com sucesso!</p>
           </div>
         </div>
-
-        <br /><br /><br />
+      </div>
+      <div class="direita">
         <table>
           <thead>
             <tr>
@@ -109,9 +98,11 @@
             </tr>
           </tbody>
         </table>
-        <br /><br />
+
+        <br>
         <a href="../tela-aluno/alunos_perfil_1.html" class="next-button">Voltar</a>
       </div>
+      
     </div>
   </main>
   <footer class="footer">
